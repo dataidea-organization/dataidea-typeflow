@@ -29,7 +29,7 @@ const Index = () => {
         <div className="flex items-center gap-2">
           <Keyboard className="w-6 h-6 text-primary" />
           <h1 className="text-xl font-bold font-mono text-foreground">
-            type<span className="text-primary">flow</span>
+            dataidea<span className="text-primary">typeflow</span>
           </h1>
         </div>
       </header>
