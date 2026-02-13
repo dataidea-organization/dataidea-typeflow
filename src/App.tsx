@@ -29,7 +29,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/dataidea-typeflow">
         <PageViewTracker />
         <Routes>
           <Route path="/" element={<Index />} />
