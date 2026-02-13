@@ -4,6 +4,7 @@ import { TypingArea } from "@/components/TypingArea";
 import { TypingStats } from "@/components/TypingStats";
 import { ResultsScreen } from "@/components/ResultsScreen";
 import { DurationSelector } from "@/components/DurationSelector";
+import { AdSense } from "@/components/AdSense";
 import { RotateCcw, Keyboard } from "lucide-react";
 
 const Index = () => {
@@ -78,6 +79,11 @@ const Index = () => {
           </>
         )}
       </main>
+
+      {/* AdSense inline horizontal */}
+      <div className="flex justify-center px-4 py-2 min-h-[90px]">
+        <AdSense />
+      </div>
 
       {/* Footer */}
       <footer className="text-center py-4 text-xs text-muted-foreground font-mono">
