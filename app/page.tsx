@@ -1,13 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { useTypingTest } from "@/hooks/useTypingTest";
 import { TypingArea } from "@/components/TypingArea";
 import { TypingStats } from "@/components/TypingStats";
 import { ResultsScreen } from "@/components/ResultsScreen";
 import { DurationSelector } from "@/components/DurationSelector";
 import { AdSense } from "@/components/AdSense";
-import { RotateCcw, Keyboard } from "lucide-react";
+import { RotateCcw } from "lucide-react";
 
 export default function Home() {
   const [duration, setDuration] = useState(30);
@@ -59,7 +60,7 @@ export default function Home() {
       {/* Header */}
       <header className="flex items-center justify-between px-6 md:px-12 py-6">
         <div className="flex items-center gap-2">
-          <Keyboard className="w-6 h-6 text-primary" />
+          <Image src="/logo.jpg" alt="DATAIDEA" width={24} height={24} className="object-contain" />
           <h1 className="text-xl font-bold font-mono text-foreground">
             dataidea<span className="text-primary">typeflow</span>
           </h1>
